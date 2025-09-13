@@ -27,17 +27,21 @@
       </ul>
     </nav>
     
-    <h1>Blog</h1>
+    <h1 id="blog-title">Blog</h1>
     
-    <div>
-      <h2>Building an AI Chatbot</h2>
-      <img src="assets/jarvis_image.png" alt="An interface for an audio-based chatbot, with buttons to start and end a conversation, a play button to pause and play the response, and a visual element which syncs with the audio output">
+    <div class="blog-article">
+      <div>
+      <h2 class="article-title">JARVIS: An AI Chatbot</h2>
+      <p>JARVIS is a python-powered audio-based chatbot which receives user input through the browser, sends it to a Flask backend to be processed, and then returns the response to the user using text-to-speech. This project is still very buggy, but you can view the demo at this <a href="https://jarvis-python-voice-assistant.onrender.com/">render link</a> (please note that it may take some time to boot)!</p>
+      </div>
+      <img src="assets/jarvis_image.png" alt="An interface for an audio-based chatbot, with buttons to start and end a conversation, a play button to pause and play the response, and a visual element which syncs with the audio output" class="blog-img">
     </div>
-    <div>
-      <h2>My Take on Online Learning</h2>
-      <img src="assets/cs50_certificate.png" alt="A certificate of completion for the free online Harvard course 'CS50'">
+    <div class="blog-article">
+      <img src="assets/cs50_certificate.png" alt="A certificate of completion for the free online Harvard course 'CS50'" class="blog-img">
+      <div>
+    <h2 class="article-title">My Take on Online Learning</h2>
+        <p>After taking a plethora of online courses in an attempt to self-teach programming, from codecademy to CS50, I can now conclude that <strong>no matter how many courses you complete,</strong> you will <em>never</em> learn how to code without completing <em><strong>real projects</strong></em></p>
+        </div>
     </div>
-    
-    
   </body>
 </html>

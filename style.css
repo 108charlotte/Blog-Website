@@ -5,13 +5,15 @@ Primary: #E3D5CA
 Secondary: #F5EBE0
 */
 
-/* I used replit assistant to identify why my margins weren't applying how I thought they would be, particularly on the a tag at the bottom of my home page */
+/* I used replit assistant to identify why my margins weren't applying how I thought they would be, particularly on the a tag at the bottom of my home page (it suggested switching the display style to block) */
+
+/* I used W3 schools' flexbox tutorial for styling my blog page */
 
 * {
   margin: 0;
 }
 
-/* STYLE SECTIONING TAGS */
+/* STYLE SECTIONING TAGS and text */
 body {
   background-color: #EDEDE9; 
   color: #3F3F3F;
@@ -32,24 +34,65 @@ header h2 {
   padding-bottom: 0.5em; 
 }
 
-main {
+#bio {
   margin: 10px 10%;
-  text-align: center; 
+  text-align: center;
 }
 
 main a {
-  margin-top: 10%; 
+  margin-top: 15px;
+  display: block; 
+  text-align: center; 
+}
+
+.blog-article {
+  display: flex; 
+  gap: 1em; 
+  margin: 1em; 
+}
+
+#blog-title {
+  margin: 10px; 
+}
+
+.article-title {
+  margin-bottom: 10px; 
 }
 
 /* STYLE IMAGES */
-header img {
+#header-img {
   max-width: 100%; 
 }
 
-div img {
-  max-width: 60%;
+.blog-img {
+  max-width: 40%;
   border: 5px solid #E3D5CA; 
   border-radius: 10px; 
+  object-fit: cover; 
 }
 
 /* STYLE NAV BAR */
+nav ul {
+  list-style-type: none; 
+  background-color: #F5EBE0; 
+  overflow: hidden; 
+  padding: 10px; 
+}
+
+nav li {
+  display: inline; 
+}
+
+nav li a {
+  text-decoration: none; 
+  color: #3F3F3F; 
+  padding: 1em; 
+}
+
+nav {
+  border-bottom: 2px solid #3F3F3F; 
+}
+
+li a:hover {
+  background-color: #E3D5CA; 
+}
